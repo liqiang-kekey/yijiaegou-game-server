@@ -1,0 +1,50 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title} <a href="javascript: back_url();" class="layui-btn layui-btn-primary layui-layout-right">返回上级</a></div>
+            <div class="layui-card-body">
+                <form class="layui-form padsome" action="">
+                    <input type="hidden" name="id" value ="{$item.id}"/>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">趣味类型</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" value="{$item.name}" lay-verify="required" placeholder="请输入类型名称" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <div class="layui-footer" style="left: 0;">
+                                <button class="layui-btn" lay-submit="">提交</button>
+                                <button class="layui-btn layui-btn-primary" type="button" onclick="back_url()">返回</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}
+<script>
+    layui.use(['index', 'form', 'layedit'], function(){
+        var $ = layui.$
+            ,form = layui.form;
+        form.render(null, 'component-form-group');
+
+        // 监听表单提交
+        form.on('submit()', function(data){
+            delete data.field.file;
+            Post("{:url('admin/AnswerClass/edit')}", data.field, function(res) {
+                if (res.code == 1) {
+                    alert_success(res.msg, function() {
+                        back_url();
+                    })
+                } else {
+                    alert_error(res.msg);
+                }
+            });
+            return false;
+        });
+    });
+</script>

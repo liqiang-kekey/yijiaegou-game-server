@@ -1,0 +1,70 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                {:access_button('Task/add_task')}
+                <form class="layui-search layui-form" action="" method="get">
+                    <div class="layui-col-md3">
+                        <label>任务名称</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" name="name" value="{$where.name}">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3 layui-search-submit">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-normal" type="button" onclick="search(this)">搜索</button>
+                            <!--<button class="layui-btn layui-btn-danger" type="button" onclick="export_excel(this)">导出</button>-->
+                        </div>
+                    </div>
+                    <div class="layui-clear"></div>
+                </form>
+                <table class="layui-table layui-form">
+                    <thead>
+                    <tr>
+                        
+                        <th>ID</th>
+                        <th>类别</th>
+                        <th>任务名称</th>
+                        <th>观看时长</th>
+                        <th>礼物</th>
+                        <th>启用状态</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    {if condition="empty($list)"}
+                    <tr>
+                        <td colspan="5" align="center">暂无数据！</td>
+                    </tr>
+                    {/if}
+                    <tbody>
+                    {foreach $list as $item}
+                    <tr>
+                        
+                        <td>{$item.id}</td>
+                        <td>{$item.class}</td>
+                        <td>{$item.title}</td>
+                        <td>{$item.see_time}</td>
+                        <td>{$item.name}</td>
+                        <td>{$item.isenable}</td>
+                        <td>
+                            <!--操作按钮开始-->
+                            {:access_button('Task/edit_task', ['id'=>$item['id']], '编辑')}
+                            {:access_button('Task/del_task', ['id'=>$item['id']], '删除', 'confirm')}
+                            <!--操作按钮结束-->
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页按钮输出开始-->
+                <div class="page">
+                {$page}
+                </div>
+                <!--分页按钮输出结束-->
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}

@@ -1,0 +1,2950 @@
+---------------------------------------------------------------
+[ 2020-09-09T20:45:03+08:00 ] 117.36.1.131 POST game.yijiaegou.com/public/index.php/api/Oauth/oauth_login
+[运行时间：0.245098s] [吞吐率：4.08req/s] [内存消耗：1,761.42kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Oauth',
+    2 => 'oauth_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2690 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/1979 MicroMessenger/7.0.18.1740(0x27001238) Process/appbrand1 WeChat/arm32 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'js_code' => '051y4L100GrBhK1Gug400DxTrT2y4L1H',
+)
+[ info ] [ RUN ] app\api\controller\Oauth->oauth_login[ /www/game/application/api/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000490s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT `id`,`openid`,`avatar`,`nickname`,`mobile`,`unionid` FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25MyGXy5bJ73UvoiT6eE-W7Q' LIMIT 1 [ RunTime:0.000704s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:45:26+08:00 ] 117.36.1.131 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.024714s] [吞吐率：40.46req/s] [内存消耗：2,517.81kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2690 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/1979 MicroMessenger/7.0.18.1740(0x27001238) Process/appbrand1 WeChat/arm32 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25MyGXy5bJ73UvoiT6eE-W7Q',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000436s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25MyGXy5bJ73UvoiT6eE-W7Q' LIMIT 1 [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 185 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 185 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 185 [ RunTime:0.000378s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:46:31+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/Oauth/oauth_login
+[运行时间：0.318032s] [吞吐率：3.14req/s] [内存消耗：1,761.92kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Oauth',
+    2 => 'oauth_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'js_code' => '043uUR0w3Xs5WU2b2M2w3DdgxD2uUR0L',
+)
+[ info ] [ RUN ] app\api\controller\Oauth->oauth_login[ /www/game/application/api/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001400s ]
+[ sql ] [ SQL ] SELECT `id`,`openid`,`avatar`,`nickname`,`mobile`,`unionid` FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000634s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:46:32+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.037992s] [吞吐率：26.32req/s] [内存消耗：2,614.62kb] [文件加载：43]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000389s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken_having` [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken_having` WHERE  `c_id` IN (150)  AND `class` = 1  AND `create_time` LIKE '2020-09-09%' [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 121 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121  AND `isvip` = 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user_chicken`  SET `cycle`=3,`level`=2  WHERE  `id` = 150 [ RunTime:0.009448s ]
+[ sql ] [ SQL ] SELECT `h`.`id`,`c`.`number` FROM `raisingchickens_user_chicken_having` `h` LEFT JOIN `raisingchickens_user_chicken` `c` ON `c`.`id`=`h`.`c_id` WHERE  `h`.`uid` = 121  AND `h`.`class` = 2  AND `h`.`ispickup` = 0 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000280s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:46:33+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/one_click_feeding
+[运行时间：0.166007s] [吞吐率：6.02req/s] [内存消耗：2,627.23kb] [文件加载：44]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'one_click_feeding',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->one_click_feeding[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.002305s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken_having` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_chicken_having` (`uid` , `c_id` , `name` , `class` , `create_time`) VALUES (121 , 150 , '一键喂养' , 1 , '2020-09-09 20:46:33') [ RunTime:0.021732s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user_chicken`  SET `feed_count`=`feed_count`+1  WHERE  `id` = 150 [ RunTime:0.051207s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user_chicken`  SET `last_feed_time`='2020-09-09 20:46:33'  WHERE  `id` = 150 [ RunTime:0.009906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `create_time` LIKE '2020-09-09%'  AND `t_id` = 8 LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_tanks` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT `reward_id` FROM `raisingchickens_sys_tanks` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_tanks` (`uid` , `t_id` , `details_id` , `prize_id` , `status` , `create_time`) VALUES (121 , 8 , 0 , 8 , 4 , '2020-09-09 20:46:33') [ RunTime:0.025764s ]
+[ sql ] [ SQL ] SELECT `reward_id` FROM `raisingchickens_sys_tanks` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_reward` [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_reward` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `feed`=`feed`+1  WHERE  `id` = 121 [ RunTime:0.014033s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `last_feed_time`='2020-09-09 20:46:33'  WHERE  `id` = 121 [ RunTime:0.010044s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = '121' LIMIT 1 [ RunTime:0.000748s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:46:41+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/Game/system_sign
+[运行时间：0.022602s] [吞吐率：44.24req/s] [内存消耗：2,002.48kb] [文件加载：38]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Game',
+    2 => 'system_sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ RUN ] app\api\controller\Game->system_sign[ /www/game/application/api/controller/Game.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000380s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_sign` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT `s`.`class`,`r`.`name`,`s`.`rulename`,`s`.`ruleday` FROM `raisingchickens_sys_sign` `s` LEFT JOIN `raisingchickens_sys_reward` `r` ON `s`.`reward_id`=`r`.`id` WHERE  (  s.isenable = 1 ) [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-07%' [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-08%' [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-09%' [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-10%' [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-11%' [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-12%' [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-13%' [ RunTime:0.000292s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:46:42+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_sign
+[运行时间：0.061042s] [吞吐率：16.38req/s] [内存消耗：2,634.61kb] [文件加载：44]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_sign[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000371s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ]  SELECT id  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-09%' [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_sign` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT `sys`.*,`rew`.`name`,`rew`.`type`,`rew`.`number` FROM `raisingchickens_sys_sign` `sys` LEFT JOIN `raisingchickens_sys_reward` `rew` ON `sys`.`reward_id`=`rew`.`id` WHERE  `isenable` = 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_sign` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_sign` (`uid` , `issign` , `sign_id` , `create_time` , `remark`) VALUES (121 , 1 , 1 , '2020-09-09 20:46:42' , '+2积分') [ RunTime:0.005533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_tanks` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT `reward_id` FROM `raisingchickens_sys_tanks` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_tanks` (`uid` , `t_id` , `details_id` , `prize_id` , `status` , `create_time`) VALUES (121 , 1 , 0 , 8 , 4 , '2020-09-09 20:46:42') [ RunTime:0.006098s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `integral`=`integral`+2  WHERE  `id` = 121 [ RunTime:0.004904s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `sign`=1,`last_sign_time`=1599655602  WHERE  `id` = 121 [ RunTime:0.012193s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-07%' [ RunTime:0.000344s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-08%' [ RunTime:0.000321s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-09%' [ RunTime:0.000322s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-10%' [ RunTime:0.000338s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-11%' [ RunTime:0.000311s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-12%' [ RunTime:0.000328s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 121 AND create_time LIKE '2020-09-13%' [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000508s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:46:47+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/get_tanks_list
+[运行时间：0.026253s] [吞吐率：38.09req/s] [内存消耗：2,292.34kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'get_tanks_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->get_tanks_list[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ]  select t.id,t.class,t.name,t.see_time,r.name as rname from raisingchickens_sys_tanks  as t left join raisingchickens_sys_reward r on r.id = t.reward_id order by t.id [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 1  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 3  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 4  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 5  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 8  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 10  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000609s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:46:49+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/tanks_vidoe
+[运行时间：0.023278s] [吞吐率：42.96req/s] [内存消耗：2,413.04kb] [文件加载：44]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'tanks_vidoe',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '50',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+  'page' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->tanks_vidoe[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000427s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_tanks_video` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `raisingchickens_tanks_video` LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`image`,`price`,`vurl`,`appid`,`minipage` FROM `raisingchickens_tanks_video` ORDER BY `create_time` DESC LIMIT 0,1 [ RunTime:0.000223s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:47:54+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/user_do_tanks
+[运行时间：0.091048s] [吞吐率：10.98req/s] [内存消耗：2,474.01kb] [文件加载：45]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'user_do_tanks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '65',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+  'id' => 3,
+  'longtime' => 65.319999999999993,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->user_do_tanks[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000450s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_tanks` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_tanks` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 3  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_reward` [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_reward` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_reward` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_tanks` (`uid` , `t_id` , `prize_id` , `create_time` , `status`) VALUES (121 , 3 , 9 , '2020-09-09 20:47:54' , 4) [ RunTime:0.009730s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `integral`=`integral`+5  WHERE  `id` = 121 [ RunTime:0.051092s ]
+[ sql ] [ SQL ] SELECT `s`.`id`,`s`.`class`,`s`.`name`,`s`.`video`,`s`.`see_time`,r.name as reward_name FROM `raisingchickens_sys_tanks` `s` LEFT JOIN `raisingchickens_sys_reward` `r` ON `s`.`reward_id`=`r`.`id` WHERE  (  s.isenable = 1 and s.isdelete != 1 ) [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 3 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 4 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 5 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 8 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 10 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `id` = 121 LIMIT 1 [ RunTime:0.000461s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:47:59+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/get_tanks_list
+[运行时间：0.027689s] [吞吐率：36.12req/s] [内存消耗：2,292.34kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'get_tanks_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->get_tanks_list[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000678s ]
+[ sql ] [ SQL ]  select t.id,t.class,t.name,t.see_time,r.name as rname from raisingchickens_sys_tanks  as t left join raisingchickens_sys_reward r on r.id = t.reward_id order by t.id [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 1  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 3  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 4  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 5  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 8  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 10  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000515s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:01+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/tanks_shop
+[运行时间：0.022097s] [吞吐率：45.26req/s] [内存消耗：2,416.55kb] [文件加载：44]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'tanks_shop',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '50',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+  'page' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->tanks_shop[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000417s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_tanks_shop` [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `raisingchickens_tanks_shop` WHERE  `isdelete` = 2 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`thumb`,`price`,`moth_price`,`appid`,`minipage` FROM `raisingchickens_tanks_shop` WHERE  `isdelete` = 2 ORDER BY `create_time` DESC LIMIT 0,1 [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:04+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/user_do_tanks
+[运行时间：0.045036s] [吞吐率：22.20req/s] [内存消耗：2,473.41kb] [文件加载：45]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'user_do_tanks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '62',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+  'id' => 4,
+  'longtime' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->user_do_tanks[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_tanks` [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_tanks` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 4  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_reward` [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_reward` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_reward` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_tanks` (`uid` , `t_id` , `prize_id` , `create_time` , `status`) VALUES (121 , 4 , 9 , '2020-09-09 20:48:04' , 4) [ RunTime:0.010309s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `integral`=`integral`+5  WHERE  `id` = 121 [ RunTime:0.004294s ]
+[ sql ] [ SQL ] SELECT `s`.`id`,`s`.`class`,`s`.`name`,`s`.`video`,`s`.`see_time`,r.name as reward_name FROM `raisingchickens_sys_tanks` `s` LEFT JOIN `raisingchickens_sys_reward` `r` ON `s`.`reward_id`=`r`.`id` WHERE  (  s.isenable = 1 and s.isdelete != 1 ) [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 3 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 4 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 5 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 8 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 10 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `id` = 121 LIMIT 1 [ RunTime:0.000502s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:10+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.063062s] [吞吐率：15.86req/s] [内存消耗：2,614.62kb] [文件加载：43]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000995s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken_having` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken_having` WHERE  `c_id` IN (150)  AND `class` = 1  AND `create_time` LIKE '2020-09-09%' [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 121 LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121  AND `isvip` = 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user_chicken`  SET `cycle`=3,`level`=2  WHERE  `id` = 150 [ RunTime:0.033503s ]
+[ sql ] [ SQL ] SELECT `h`.`id`,`c`.`number` FROM `raisingchickens_user_chicken_having` `h` LEFT JOIN `raisingchickens_user_chicken` `c` ON `c`.`id`=`h`.`c_id` WHERE  `h`.`uid` = 121  AND `h`.`class` = 2  AND `h`.`ispickup` = 0 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:12+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/get_tanks_list
+[运行时间：0.029194s] [吞吐率：34.25req/s] [内存消耗：2,292.34kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'get_tanks_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->get_tanks_list[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ]  select t.id,t.class,t.name,t.see_time,r.name as rname from raisingchickens_sys_tanks  as t left join raisingchickens_sys_reward r on r.id = t.reward_id order by t.id [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 1  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 3  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 4  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 5  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 8  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 10  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000857s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:22+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/user_do_tanks
+[运行时间：0.083061s] [吞吐率：12.04req/s] [内存消耗：2,473.30kb] [文件加载：45]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'user_do_tanks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '48',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+  'id' => 5,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->user_do_tanks[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001020s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_tanks` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_tanks` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 5  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_reward` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_reward` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_reward` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_tanks` (`uid` , `t_id` , `prize_id` , `create_time` , `status`) VALUES (121 , 5 , 9 , '2020-09-09 20:48:22' , 4) [ RunTime:0.018897s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `integral`=`integral`+5  WHERE  `id` = 121 [ RunTime:0.034492s ]
+[ sql ] [ SQL ] SELECT `s`.`id`,`s`.`class`,`s`.`name`,`s`.`video`,`s`.`see_time`,r.name as reward_name FROM `raisingchickens_sys_tanks` `s` LEFT JOIN `raisingchickens_sys_reward` `r` ON `s`.`reward_id`=`r`.`id` WHERE  (  s.isenable = 1 and s.isdelete != 1 ) [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 3 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 4 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 5 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 8 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 10 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `id` = 121 LIMIT 1 [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:30+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.041254s] [吞吐率：24.24req/s] [内存消耗：2,614.62kb] [文件加载：43]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000445s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001299s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken_having` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken_having` WHERE  `c_id` IN (150)  AND `class` = 1  AND `create_time` LIKE '2020-09-09%' [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 121 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121  AND `isvip` = 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user_chicken`  SET `cycle`=3,`level`=2  WHERE  `id` = 150 [ RunTime:0.006700s ]
+[ sql ] [ SQL ] SELECT `h`.`id`,`c`.`number` FROM `raisingchickens_user_chicken_having` `h` LEFT JOIN `raisingchickens_user_chicken` `c` ON `c`.`id`=`h`.`c_id` WHERE  `h`.`uid` = 121  AND `h`.`class` = 2  AND `h`.`ispickup` = 0 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000362s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:30+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/user_do_tanks
+[运行时间：0.032670s] [吞吐率：30.61req/s] [内存消耗：2,367.43kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'user_do_tanks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '48',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+  'id' => 5,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->user_do_tanks[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001130s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_tanks` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_tanks` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 5  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_reward` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_reward` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000240s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:32+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.035436s] [吞吐率：28.22req/s] [内存消耗：2,614.62kb] [文件加载：43]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken_having` [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken_having` WHERE  `c_id` IN (150)  AND `class` = 1  AND `create_time` LIKE '2020-09-09%' [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 121 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121  AND `isvip` = 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user_chicken`  SET `cycle`=3,`level`=2  WHERE  `id` = 150 [ RunTime:0.006485s ]
+[ sql ] [ SQL ] SELECT `h`.`id`,`c`.`number` FROM `raisingchickens_user_chicken_having` `h` LEFT JOIN `raisingchickens_user_chicken` `c` ON `c`.`id`=`h`.`c_id` WHERE  `h`.`uid` = 121  AND `h`.`class` = 2  AND `h`.`ispickup` = 0 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000275s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:35+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.041393s] [吞吐率：24.16req/s] [内存消耗：2,614.62kb] [文件加载：43]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken_having` [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken_having` WHERE  `c_id` IN (150)  AND `class` = 1  AND `create_time` LIKE '2020-09-09%' [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 121 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121  AND `isvip` = 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user_chicken`  SET `cycle`=3,`level`=2  WHERE  `id` = 150 [ RunTime:0.013892s ]
+[ sql ] [ SQL ] SELECT `h`.`id`,`c`.`number` FROM `raisingchickens_user_chicken_having` `h` LEFT JOIN `raisingchickens_user_chicken` `c` ON `c`.`id`=`h`.`c_id` WHERE  `h`.`uid` = 121  AND `h`.`class` = 2  AND `h`.`ispickup` = 0 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000274s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:37+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/get_tanks_list
+[运行时间：0.026185s] [吞吐率：38.19req/s] [内存消耗：2,292.34kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'get_tanks_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->get_tanks_list[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000406s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ]  select t.id,t.class,t.name,t.see_time,r.name as rname from raisingchickens_sys_tanks  as t left join raisingchickens_sys_reward r on r.id = t.reward_id order by t.id [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 1  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 3  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 4  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 5  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 8  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 10  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:40+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/user_do_tanks
+[运行时间：0.153042s] [吞吐率：6.53req/s] [内存消耗：2,474.30kb] [文件加载：45]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'user_do_tanks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '63',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+  'id' => 10,
+  'longtime' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->user_do_tanks[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_tanks` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_tanks` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 10  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_reward` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_reward` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_reward` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_tanks` (`uid` , `t_id` , `prize_id` , `create_time` , `status`) VALUES (121 , 10 , 9 , '2020-09-09 20:48:40' , 4) [ RunTime:0.095500s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `integral`=`integral`+5  WHERE  `id` = 121 [ RunTime:0.026649s ]
+[ sql ] [ SQL ] SELECT `s`.`id`,`s`.`class`,`s`.`name`,`s`.`video`,`s`.`see_time`,r.name as reward_name FROM `raisingchickens_sys_tanks` `s` LEFT JOIN `raisingchickens_sys_reward` `r` ON `s`.`reward_id`=`r`.`id` WHERE  (  s.isenable = 1 and s.isdelete != 1 ) [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 3 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 4 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 5 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 8 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT id  FROM raisingchickens_user_tanks  WHERE  uid = 121 AND create_time LIKE '2020-09-09%' AND t_id= 10 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `id` = 121 LIMIT 1 [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:44+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_video_list
+[运行时间：0.711235s] [吞吐率：1.41req/s] [内存消耗：2,511.39kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_video_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_video_list[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000466s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000361s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:45+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.054515s] [吞吐率：0.95req/s] [内存消耗：2,510.26kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2CD3T25-I320180801AACHC39177953',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000551s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000372s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:45+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.135767s] [吞吐率：0.88req/s] [内存消耗：2,510.16kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '20',
+)
+[ info ] [ PARAM ] array (
+  'dev' => '472a939e79645f39',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000287s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:45+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.199058s] [吞吐率：0.83req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000609s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.001284s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:48:47+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.348915s] [吞吐率：0.74req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000464s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:49:02+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.035409s] [吞吐率：28.24req/s] [内存消耗：2,614.62kb] [文件加载：43]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken_having` [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken_having` WHERE  `c_id` IN (150)  AND `class` = 1  AND `create_time` LIKE '2020-09-09%' [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 121 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121  AND `isvip` = 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user_chicken`  SET `cycle`=3,`level`=2  WHERE  `id` = 150 [ RunTime:0.006661s ]
+[ sql ] [ SQL ] SELECT `h`.`id`,`c`.`number` FROM `raisingchickens_user_chicken_having` `h` LEFT JOIN `raisingchickens_user_chicken` `c` ON `c`.`id`=`h`.`c_id` WHERE  `h`.`uid` = 121  AND `h`.`class` = 2  AND `h`.`ispickup` = 0 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000298s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:49:04+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.054312s] [吞吐率：18.41req/s] [内存消耗：2,614.62kb] [文件加载：43]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000384s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001002s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken_having` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken_having` WHERE  `c_id` IN (150)  AND `class` = 1  AND `create_time` LIKE '2020-09-09%' [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 121 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121  AND `isvip` = 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user_chicken`  SET `cycle`=3,`level`=2  WHERE  `id` = 150 [ RunTime:0.025740s ]
+[ sql ] [ SQL ] SELECT `h`.`id`,`c`.`number` FROM `raisingchickens_user_chicken_having` `h` LEFT JOIN `raisingchickens_user_chicken` `c` ON `c`.`id`=`h`.`c_id` WHERE  `h`.`uid` = 121  AND `h`.`class` = 2  AND `h`.`ispickup` = 0 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 121 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000276s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:49:06+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/tanks/get_tanks_list
+[运行时间：0.028276s] [吞吐率：35.37req/s] [内存消耗：2,293.41kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'get_tanks_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Lu4RE1powleOMur-2r3aac',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->get_tanks_list[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000385s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.002319s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Lu4RE1powleOMur-2r3aac' LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ]  select t.id,t.class,t.name,t.see_time,r.name as rname from raisingchickens_sys_tanks  as t left join raisingchickens_sys_reward r on r.id = t.reward_id order by t.id [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 1  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 3  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 4  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 5  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 8  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 121  AND `t_id` = 10  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000716s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:49:17+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.322845s] [吞吐率：0.76req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000392s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:49:47+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.251888s] [吞吐率：0.80req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:50:17+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：0.914150s] [吞吐率：1.09req/s] [内存消耗：2,510.27kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000366s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000433s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:50:47+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.366102s] [吞吐率：0.73req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:50:51+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/api/Oauth/oauth_login
+[运行时间：0.303444s] [吞吐率：3.30req/s] [内存消耗：1,726.12kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Oauth',
+    2 => 'oauth_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'js_code' => '033TwYFa1YubBz03smFa1qBwJc3TwYFX',
+)
+[ info ] [ RUN ] app\api\controller\Oauth->oauth_login[ /www/game/application/api/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT `id`,`openid`,`avatar`,`nickname`,`mobile`,`unionid` FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25CjpawuhrKMIxvz2svwHQHo' LIMIT 1 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user` (`openid` , `unionid` , `create_time`) VALUES ('o3tC25CjpawuhrKMIxvz2svwHQHo' , '' , '2020-09-09 20:50:51') [ RunTime:0.015589s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:51:17+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/api/oauth/de_unionid
+[运行时间：0.026792s] [吞吐率：37.32req/s] [内存消耗：1,799.41kb] [文件加载：35]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'oauth',
+    2 => 'de_unionid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '734',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25CjpawuhrKMIxvz2svwHQHo',
+  'session_key' => 'D0XgLFkc8ONjeOwESOKkBg%3D%3D',
+  'iv' => 'RjDpmQ2J8ieUQvnDCsT%2B6g%3D%3D',
+  'e_data' => 'Bx9mN3vq8MGN%2BfhlCUfEGGHfd8ygasFsrV0AzJHJ169NIA9GWrgvHzcCfBP%2Ba3I0XWaOc%2Fm9CiczVvtx8O5HjiIH2Z3jbtCcA5SR1YAlJw6qX32bDhAzzKtYP8sIaX9hCtCaDCTkLnwzk4Dafk8krE6rvqjs5dj9jJ8FJ3bfk6skgxkA2R2yRwuJsoY9IN2wKf%2BkWh4zlJWEcZ21a1lJSYb4QLU4Q2y3ZUJ6eAh7%2BkICEZN%2BNcud%2F6WeEOqgqpoR%2Fia2DoCLAvGj6I%2Bd4Yo%2BB%2BelJQzgCIg6LSPLC77FNglIONDWoAoifUZdM6WQP7sw%2FY5SMXn%2BHQV%2Bt1DaJNgnUuaqcJ9yov62YuhIjLG3%2B9gjBf%2BmtBfsE5k3UFNa%2FXT4FygKm3lr43XqlMlKEfO1c%2Fn8juSk%2BcfxwhxMhEDSui2kk4hpZbn3eJNLYcWfPuIqmh33oT1JPhZNkTkLzKEaZDGhplMDqT34sJwpAJYiAS0xtzlURQ8p9rxSyGjcpD83MFOC9cp1sTk89SvWXb1KNRayaLxS2N15548%2FWj1ZTfw%3D',
+)
+[ info ] [ RUN ] app\api\controller\Oauth->de_unionid[ /www/game/application/api/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000384s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25CjpawuhrKMIxvz2svwHQHo' LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `nickname`='顺其自然',`avatar`='https://thirdwx.qlogo.cn/mmopen/vi_32/ohDdvzhycYXLaz4KyFZopUNdkI7SYB9sS5sKBhdiczfice5VJEDuaG2I60GQ1s3Ykuia7wLR2OAh35PmcgZvuZVrg/132',`unionid`='oOlUFw065dUTjJkOwNVsAbwXNNTc',`update_time`='1599655877'  WHERE  `id` = 186 [ RunTime:0.008397s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:51:18+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.443882s] [吞吐率：0.69req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000352s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:51:18+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.026480s] [吞吐率：37.76req/s] [内存消耗：2,518.34kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25CjpawuhrKMIxvz2svwHQHo',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25CjpawuhrKMIxvz2svwHQHo' LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 186 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 186 LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 186 [ RunTime:0.000376s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:51:18+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_user_qrcode
+[运行时间：0.624422s] [吞吐率：1.60req/s] [内存消耗：3,179.27kb] [文件加载：54]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_user_qrcode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25CjpawuhrKMIxvz2svwHQHo',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_user_qrcode[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000369s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25CjpawuhrKMIxvz2svwHQHo' LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `qrcode`='https://game.vrupup.com/resources/raisingchickens/20200909/15996558785f58cfc6c2aee.png'  WHERE  `id` = 186 [ RunTime:0.009572s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:51:35+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/api/Game/system_sign
+[运行时间：0.022943s] [吞吐率：43.59req/s] [内存消耗：2,002.34kb] [文件加载：38]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Game',
+    2 => 'system_sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25CjpawuhrKMIxvz2svwHQHo',
+)
+[ info ] [ RUN ] app\api\controller\Game->system_sign[ /www/game/application/api/controller/Game.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000411s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25CjpawuhrKMIxvz2svwHQHo' LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_sign` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT `s`.`class`,`r`.`name`,`s`.`rulename`,`s`.`ruleday` FROM `raisingchickens_sys_sign` `s` LEFT JOIN `raisingchickens_sys_reward` `r` ON `s`.`reward_id`=`r`.`id` WHERE  (  s.isenable = 1 ) [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-07%' [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-08%' [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-09%' [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-10%' [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-11%' [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-12%' [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-13%' [ RunTime:0.000291s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:51:40+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/api/userinfo/user_sign
+[运行时间：0.081712s] [吞吐率：12.24req/s] [内存消耗：2,634.41kb] [文件加载：44]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25CjpawuhrKMIxvz2svwHQHo',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_sign[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000482s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25CjpawuhrKMIxvz2svwHQHo' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ]  SELECT id  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-09%' [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_sign` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT `sys`.*,`rew`.`name`,`rew`.`type`,`rew`.`number` FROM `raisingchickens_sys_sign` `sys` LEFT JOIN `raisingchickens_sys_reward` `rew` ON `sys`.`reward_id`=`rew`.`id` WHERE  `isenable` = 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_sign` [ RunTime:0.000612s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_sign` (`uid` , `issign` , `sign_id` , `create_time` , `remark`) VALUES (186 , 1 , 1 , '2020-09-09 20:51:40' , '+2积分') [ RunTime:0.022432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_tanks` [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT `reward_id` FROM `raisingchickens_sys_tanks` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_tanks` (`uid` , `t_id` , `details_id` , `prize_id` , `status` , `create_time`) VALUES (186 , 1 , 0 , 8 , 4 , '2020-09-09 20:51:40') [ RunTime:0.007436s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `integral`=`integral`+2  WHERE  `id` = 186 [ RunTime:0.006803s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `sign`=1,`last_sign_time`=1599655900  WHERE  `id` = 186 [ RunTime:0.012972s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-07%' [ RunTime:0.000456s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-08%' [ RunTime:0.000339s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-09%' [ RunTime:0.000332s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-10%' [ RunTime:0.000314s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-11%' [ RunTime:0.000329s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-12%' [ RunTime:0.000309s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 186 AND create_time LIKE '2020-09-13%' [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25CjpawuhrKMIxvz2svwHQHo' LIMIT 1 [ RunTime:0.000582s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:51:48+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.511516s] [吞吐率：0.66req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000358s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:52:18+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.529371s] [吞吐率：0.65req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000407s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.002068s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:52:48+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/applet/order/goods
+[运行时间：0.016714s] [吞吐率：59.83req/s] [内存消耗：1,759.35kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'applet',
+    1 => 'order',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxb9518432372e2732/4/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '13',
+)
+[ info ] [ PARAM ] array (
+  'openid' => '',
+)
+[ info ] [ RUN ] app\applet\controller\Order->goods[ /www/game/application/applet/controller/Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000425s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_applet_goods` [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT `name`,`intro`,`banner`,`thumb`,`money`,`shipping_money` FROM `raisingchickens_applet_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000291s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:52:48+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.863270s] [吞吐率：0.54req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:52:48+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/applet/oauth/oauth_login
+[运行时间：0.343004s] [吞吐率：2.92req/s] [内存消耗：1,716.61kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'applet',
+    1 => 'oauth',
+    2 => 'oauth_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxb9518432372e2732/4/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '58',
+)
+[ info ] [ PARAM ] array (
+  'js_code' => '043MT0ll2WWRA54j9Lml2pEbF33MT0lK',
+  'openid' => '',
+)
+[ info ] [ RUN ] app\applet\controller\Oauth->oauth_login[ /www/game/application/applet/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000459s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_applet_user` [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SELECT id as user_id,`openid`,`avatar`,`nickname`,`unionid` FROM `raisingchickens_applet_user` WHERE  `openid` = 'o-A305GfZhtQEJ1x4Eg71Is0Ymbg' LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_applet_user` (`openid` , `unionid` , `create_time`) VALUES ('o-A305GfZhtQEJ1x4Eg71Is0Ymbg' , '' , 1599655968) [ RunTime:0.005421s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:52:58+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/applet/oauth/de_unionid
+[运行时间：0.024627s] [吞吐率：40.61req/s] [内存消耗：1,790.10kb] [文件加载：35]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'applet',
+    1 => 'oauth',
+    2 => 'de_unionid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxb9518432372e2732/4/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '728',
+)
+[ info ] [ PARAM ] array (
+  'session_key' => 'hmTLfRvYbMaC7YWb7Tfr7w%3D%3D',
+  'e_data' => 'Z1%2BgkLr9ORWgnNUCNa0HNlW6KynH27FztwgKtfWgmHtWbpQXkpXpHrJXXPHk%2Bkth3YhbaqcVTHgbG4%2F%2B2VNJj%2BLd6xz7eAtCNhMCNx4QJtCKqprHukTd8uo2eeFCXQhpQf50cKBgtsjnPzuaUAgfmDRKCsUtF5Rj0TINAeJE%2FV5x%2FTjNfzYtIr9W%2FYGd0k%2FKIs0iljsU32KWyBIMIUT2nLpHhwgA0KYsyd3NwwIxGUr7Tb2j6QQYm6XTOjyk0sN%2FzB8K1F0nkrJV6Zt05AvINSIilZV5oWFw4%2BYAvjTMNt4CtowvuSKi1tg9ofldY5NmqTHXuhzKKvrYj8XpLyj6swMRarVSe%2B%2BChJInjH46J%2Bcu1RMsXnC6qUars7gGufQNfUtERCt8iBBQum2GJgOa21CgtF6JiJ9McoktiPwWEzTCJeMbLLF7J66qN8uU4vSUCxhxe7gyCRNGmKir9l0viLfuO8HzFbn2mb8uymBPRDLGZrCzVM4r%2B8teZV14ceKfq9AS3XcizLwfUexv3Ji%2FQqRFkk7u90YxI15VdcdlNto%3D',
+  'iv' => 'vFUKtRa09cLV%2FCGgy5Wz%2Fg%3D%3D',
+  'openid' => 'o-A305GfZhtQEJ1x4Eg71Is0Ymbg',
+)
+[ info ] [ RUN ] app\applet\controller\Oauth->de_unionid[ /www/game/application/applet/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_applet_user` [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT `id`,`unionid` FROM `raisingchickens_applet_user` WHERE  `openid` = 'o-A305GfZhtQEJ1x4Eg71Is0Ymbg' LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_applet_user`  SET `nickname`='顺其自然',`avatar`='https://thirdwx.qlogo.cn/mmopen/vi_32/XaBDWRSsd01WG2WiblPSVdXucqyvRpEyk3ocpIE9NgdktvibW08OkRicDRZhdJf1fFNpx9k645qibHibEmqnoSjPE1w/132',`unionid`='oOlUFw065dUTjJkOwNVsAbwXNNTc',`update_time`=1599655978  WHERE  `id` = 147 [ RunTime:0.005493s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:52:59+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/applet/order/check_user
+[运行时间：0.021258s] [吞吐率：47.04req/s] [内存消耗：1,761.95kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'applet',
+    1 => 'order',
+    2 => 'check_user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxb9518432372e2732/4/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o-A305GfZhtQEJ1x4Eg71Is0Ymbg',
+)
+[ info ] [ RUN ] app\applet\controller\Order->check_user[ /www/game/application/applet/controller/Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003251s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_applet_user` [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT `id`,`unionid` FROM `raisingchickens_applet_user` WHERE  `openid` = 'o-A305GfZhtQEJ1x4Eg71Is0Ymbg' LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user` WHERE  `unionid` = 'oOlUFw065dUTjJkOwNVsAbwXNNTc' LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `openid` FROM `raisingchickens_user` WHERE  `id` = 186 LIMIT 1 [ RunTime:0.000288s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:53:16+08:00 ] 1.81.244.214 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.024243s] [吞吐率：41.25req/s] [内存消耗：2,518.58kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1901A Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200601 Mobile Safari/537.36 MMWEBID/3606 MicroMessenger/7.0.16.1700(0x2700103F) Process/appbrand0 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25CjpawuhrKMIxvz2svwHQHo',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25CjpawuhrKMIxvz2svwHQHo' LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 186 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 186 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 186 [ RunTime:0.000263s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:53:17+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.246237s] [吞吐率：0.80req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000436s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2020-09-09T20:53:48+08:00 ] 125.76.175.38 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.480912s] [吞吐率：0.68req/s] [内存消耗：2,510.30kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'x-requested-with' => 'com.tencent.mm',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/974 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64 miniProgram',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000393s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:07:58+08:00 ] 106.44.0.224 POST game.yijiaegou.com/public/index.php/api/Oauth/oauth_login
+[运行时间：0.273382s] [吞吐率：3.66req/s] [内存消耗：1,761.90kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Oauth',
+    2 => 'oauth_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; PAFM00 Build/QKQ1.191008.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/6949 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'js_code' => '0732MKkl2RBzA543EAol2D5S3m12MKkT',
+)
+[ info ] [ RUN ] app\api\controller\Oauth->oauth_login[ /www/game/application/api/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000487s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001084s ]
+[ sql ] [ SQL ] SELECT `id`,`openid`,`avatar`,`nickname`,`mobile`,`unionid` FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25BpgyI8bZpjpJt_BjLkWU0M' LIMIT 1 [ RunTime:0.000520s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:07:58+08:00 ] 106.44.0.224 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.042878s] [吞吐率：23.32req/s] [内存消耗：2,617.63kb] [文件加载：43]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; PAFM00 Build/QKQ1.191008.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/6949 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25BpgyI8bZpjpJt_BjLkWU0M',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25BpgyI8bZpjpJt_BjLkWU0M' LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 39 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken_having` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken_having` WHERE  `c_id` IN (83,205)  AND `class` = 1  AND `create_time` LIKE '2020-09-09%' [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 39 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 39 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 39  AND `isvip` = 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user_chicken`  SET `cycle`=8,`level`=3  WHERE  `id` = 83 [ RunTime:0.012786s ]
+[ sql ] [ SQL ] SELECT `h`.`id`,`c`.`number` FROM `raisingchickens_user_chicken_having` `h` LEFT JOIN `raisingchickens_user_chicken` `c` ON `c`.`id`=`h`.`c_id` WHERE  `h`.`uid` = 39  AND `h`.`class` = 2  AND `h`.`ispickup` = 0 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 39 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25BpgyI8bZpjpJt_BjLkWU0M' LIMIT 1 [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:08:04+08:00 ] 106.44.0.224 POST game.yijiaegou.com/public/index.php/api/Game/system_sign
+[运行时间：0.023617s] [吞吐率：42.34req/s] [内存消耗：2,002.42kb] [文件加载：38]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Game',
+    2 => 'system_sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; PAFM00 Build/QKQ1.191008.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/6949 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25BpgyI8bZpjpJt_BjLkWU0M',
+)
+[ info ] [ RUN ] app\api\controller\Game->system_sign[ /www/game/application/api/controller/Game.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000420s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25BpgyI8bZpjpJt_BjLkWU0M' LIMIT 1 [ RunTime:0.001082s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_sign` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT `s`.`class`,`r`.`name`,`s`.`rulename`,`s`.`ruleday` FROM `raisingchickens_sys_sign` `s` LEFT JOIN `raisingchickens_sys_reward` `r` ON `s`.`reward_id`=`r`.`id` WHERE  (  s.isenable = 1 ) [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 39 AND create_time LIKE '2020-09-07%' [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 39 AND create_time LIKE '2020-09-08%' [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 39 AND create_time LIKE '2020-09-09%' [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 39 AND create_time LIKE '2020-09-10%' [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 39 AND create_time LIKE '2020-09-11%' [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 39 AND create_time LIKE '2020-09-12%' [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 39 AND create_time LIKE '2020-09-13%' [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:08:07+08:00 ] 106.44.0.224 POST game.yijiaegou.com/public/index.php/api/tanks/get_tanks_list
+[运行时间：0.027300s] [吞吐率：36.63req/s] [内存消耗：2,293.39kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'tanks',
+    2 => 'get_tanks_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; PAFM00 Build/QKQ1.191008.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2581 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/6949 MicroMessenger/7.0.18.1740(0x27001239) Process/appbrand1 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25BpgyI8bZpjpJt_BjLkWU0M',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Tanks->get_tanks_list[ /www/game/application/api/controller/Tanks.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000445s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001002s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25BpgyI8bZpjpJt_BjLkWU0M' LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ]  select t.id,t.class,t.name,t.see_time,r.name as rname from raisingchickens_sys_tanks  as t left join raisingchickens_sys_reward r on r.id = t.reward_id order by t.id [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 39  AND `t_id` = 1  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 39  AND `t_id` = 3  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 39  AND `t_id` = 4  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 39  AND `t_id` = 5  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 39  AND `t_id` = 8  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_tanks` WHERE  `uid` = 39  AND `t_id` = 10  AND `create_time` LIKE '2020-09-09%' LIMIT 1 [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:12:44+08:00 ] 111.19.81.172 POST game.yijiaegou.com/public/index.php/api/Oauth/oauth_login
+[运行时间：0.286168s] [吞吐率：3.49req/s] [内存消耗：1,761.44kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Oauth',
+    2 => 'oauth_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'br, gzip, deflate',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'js_code' => '01344Lkl28MzA54rYUkl2f0Mqs044Lk8',
+)
+[ info ] [ RUN ] app\api\controller\Oauth->oauth_login[ /www/game/application/api/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000453s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `id`,`openid`,`avatar`,`nickname`,`mobile`,`unionid` FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25OYWT5f9Us9aP9vxzW9Ql6o' LIMIT 1 [ RunTime:0.000508s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:12:45+08:00 ] 111.19.81.172 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.024949s] [吞吐率：40.08req/s] [内存消耗：2,518.09kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'br, gzip, deflate',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25OYWT5f9Us9aP9vxzW9Ql6o',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000406s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25OYWT5f9Us9aP9vxzW9Ql6o' LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 65 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 65 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 65 [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:12:51+08:00 ] 111.19.81.172 POST game.yijiaegou.com/public/index.php/api/userinfo/user_video_list
+[运行时间：1.562016s] [吞吐率：0.64req/s] [内存消耗：2,510.20kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_video_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN miniProgram',
+  'accept-encoding' => 'br, gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_video_list[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000441s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:12:52+08:00 ] 111.19.81.172 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.426589s] [吞吐率：0.70req/s] [内存消耗：2,509.38kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'br, gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN miniProgram',
+  'accept-language' => 'zh-cn',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2CD3T25-I320180801AACHC39177953',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.001266s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:12:52+08:00 ] 111.19.81.172 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.408198s] [吞吐率：0.71req/s] [内存消耗：2,509.29kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'br, gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN miniProgram',
+  'accept-language' => 'zh-cn',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '20',
+)
+[ info ] [ PARAM ] array (
+  'dev' => '472a939e79645f39',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000314s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:12:52+08:00 ] 111.19.81.172 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.539265s] [吞吐率：0.65req/s] [内存消耗：2,509.43kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'br, gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN miniProgram',
+  'accept-language' => 'zh-cn',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000416s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:12:53+08:00 ] 111.19.81.172 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：1.134213s] [吞吐率：0.88req/s] [内存消耗：2,509.43kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'br, gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN miniProgram',
+  'accept-language' => 'zh-cn',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000417s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:13:25+08:00 ] 111.19.81.172 POST game.yijiaegou.com/public/index.php/api/userinfo/user_see_video
+[运行时间：2.211969s] [吞吐率：0.45req/s] [内存消耗：2,509.43kb] [文件加载：41]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_see_video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'br, gzip, deflate',
+  'referer' => 'https://game.flyh5.cn/resources/game/wechat/chencan/youji/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN miniProgram',
+  'accept-language' => 'zh-cn',
+  'origin' => 'https://game.flyh5.cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'dev' => 'DS-2DC7223IW-A20181026AACHC63453057W',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_see_video[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_video` [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_sys_video` WHERE  `isenable` = 1  AND `isdelete` = 2 LIMIT 1 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:13:30+08:00 ] 111.19.81.172 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.024093s] [吞吐率：41.51req/s] [内存消耗：2,518.09kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'br, gzip, deflate',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25OYWT5f9Us9aP9vxzW9Ql6o',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000409s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25OYWT5f9Us9aP9vxzW9Ql6o' LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 65 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 65 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 65 [ RunTime:0.000252s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:23:12+08:00 ] 36.60.134.40 POST game.yijiaegou.com/public/index.php/api/Oauth/oauth_login
+[运行时间：0.333857s] [吞吐率：3.00req/s] [内存消耗：1,725.62kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Oauth',
+    2 => 'oauth_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/4G Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'js_code' => '083EK2ll2NJLA543kxnl2xlPlP3EK2lv',
+)
+[ info ] [ RUN ] app\api\controller\Oauth->oauth_login[ /www/game/application/api/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001086s ]
+[ sql ] [ SQL ] SELECT `id`,`openid`,`avatar`,`nickname`,`mobile`,`unionid` FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Ct1cdyLx6pTu5AF6opnN1o' LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user` (`openid` , `unionid` , `create_time`) VALUES ('o3tC25Ct1cdyLx6pTu5AF6opnN1o' , '' , '2020-09-09 21:23:12') [ RunTime:0.026953s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:23:23+08:00 ] 36.60.134.40 POST game.yijiaegou.com/public/index.php/api/oauth/de_unionid
+[运行时间：0.043396s] [吞吐率：23.04req/s] [内存消耗：1,799.05kb] [文件加载：35]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'oauth',
+    2 => 'de_unionid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/4G Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '744',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Ct1cdyLx6pTu5AF6opnN1o',
+  'session_key' => 'ES%2FGOuaqI1%2FUAuGdaWRDMw%3D%3D',
+  'iv' => 'hxR%2BiN4BLGVA3AQbGsPTeQ%3D%3D',
+  'e_data' => 'Ab%2Bd40qvrdreNs7H3N8IMrK4ysV%2F%2BZtRiL7CeF3HpXK1CRO9F%2FHft5Q9%2Blidjqbj%2B6RGGnrdtppuJ7KK05ARR74txf4KdYsJ3WFixBL77wE47WT1LDuiA5iHv0BUESs1SLdylYE2R3nc805Z6DprrtBRvlyLuImo3VJnW2eSPuHevM9ZczGN6TN6YiuguXPcvl8N18dSIfcGW9H20Gt0Tz%2FB99%2BRPMkj%2BW3Q1ZYrLYsRnugE%2BANzYeID9NZWtADqdZYOnc7pfZjnL3LmdQxQUNXhkKbP0xKiW2MSDqpnfyhN4hkv%2FsssmS4%2BpvrSkDlf9GfkYDn%2FXCybdcIC0z1JjaZWJQnu%2BHiCCAhI9gmQc0KnIGBE0L5VNR4wszcUz8NhyhDveyrEm4xnAz7qUCW4wtQaocYSHQUcu9kLwb%2Bf15ryerv2OrYHBYxyyL6DlTwHOsi%2B8mI7%2FZCQ7QGfec%2FhdGScf4mUEx4TbvVfHUCbQI%2BK%2BzLqC3kWxZQ%2BHA%2Fp5xKMi67CsimsOJ8O5f8%2BF2mxC2JQEK6UwNXWO4fzkErP0PQ%3D',
+)
+[ info ] [ RUN ] app\api\controller\Oauth->de_unionid[ /www/game/application/api/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000421s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Ct1cdyLx6pTu5AF6opnN1o' LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `nickname`='A😈我是程吵吵',`avatar`='https://thirdwx.qlogo.cn/mmopen/vi_32/icRYqcDzvwct5Bx4LlfPmplyzHqT3u9BKPH92oVcAtt8MTrXP0RiaT6dhnWbDxkTlZUpGoWWFUVGYnrpqibH5JibRA/132',`unionid`='oOlUFw9CPC6SY24_7oN_Bve7lZ4E',`update_time`='1599657803'  WHERE  `id` = 187 [ RunTime:0.025262s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:23:23+08:00 ] 36.60.134.40 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.026428s] [吞吐率：37.84req/s] [内存消耗：2,517.77kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/4G Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Ct1cdyLx6pTu5AF6opnN1o',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Ct1cdyLx6pTu5AF6opnN1o' LIMIT 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 187 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 187 LIMIT 1 [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 187 [ RunTime:0.000339s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:23:24+08:00 ] 36.60.134.40 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_user_qrcode
+[运行时间：0.812221s] [吞吐率：1.23req/s] [内存消耗：3,178.70kb] [文件加载：54]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_user_qrcode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/4G Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Ct1cdyLx6pTu5AF6opnN1o',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_user_qrcode[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Ct1cdyLx6pTu5AF6opnN1o' LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `qrcode`='https://game.vrupup.com/resources/raisingchickens/20200909/15996578045f58d74c3f6a6.png'  WHERE  `id` = 187 [ RunTime:0.019929s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:23:30+08:00 ] 36.60.134.40 POST game.yijiaegou.com/public/index.php/applet/order/goods
+[运行时间：0.016508s] [吞吐率：60.58req/s] [内存消耗：1,758.85kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'applet',
+    1 => 'order',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxb9518432372e2732/4/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/4G Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '13',
+)
+[ info ] [ PARAM ] array (
+  'openid' => '',
+)
+[ info ] [ RUN ] app\applet\controller\Order->goods[ /www/game/application/applet/controller/Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000455s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_applet_goods` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT `name`,`intro`,`banner`,`thumb`,`money`,`shipping_money` FROM `raisingchickens_applet_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000290s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:23:30+08:00 ] 36.60.134.40 POST game.yijiaegou.com/public/index.php/applet/oauth/oauth_login
+[运行时间：0.311411s] [吞吐率：3.21req/s] [内存消耗：1,716.11kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'applet',
+    1 => 'oauth',
+    2 => 'oauth_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxb9518432372e2732/4/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/4G Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '58',
+)
+[ info ] [ PARAM ] array (
+  'js_code' => '073jtJFa1pLPAz0M4MGa1ucr4m1jtJFe',
+  'openid' => '',
+)
+[ info ] [ RUN ] app\applet\controller\Oauth->oauth_login[ /www/game/application/applet/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000487s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_applet_user` [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT id as user_id,`openid`,`avatar`,`nickname`,`unionid` FROM `raisingchickens_applet_user` WHERE  `openid` = 'o-A305BsdQO0ZhI_M3BZbS6oUe1I' LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_applet_user` (`openid` , `unionid` , `create_time`) VALUES ('o-A305BsdQO0ZhI_M3BZbS6oUe1I' , '' , 1599657810) [ RunTime:0.013922s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:23:54+08:00 ] 36.60.134.40 POST game.yijiaegou.com/public/index.php/applet/oauth/de_unionid
+[运行时间：0.033785s] [吞吐率：29.60req/s] [内存消耗：1,789.59kb] [文件加载：35]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'applet',
+    1 => 'oauth',
+    2 => 'de_unionid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxb9518432372e2732/4/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/4G Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '718',
+)
+[ info ] [ PARAM ] array (
+  'session_key' => 'OcLtpd1gYgWd9NBYDmHaPg%3D%3D',
+  'e_data' => 'weITLjdCu3kmgk3wKAwSaoVY2P8%2BuEMvhOe61UmjhLgBSiDHQZoq6WB757SQyoVJPwgwR4xgr2FqZ5uZ8waD1H6E%2BEB2NBbiD9ttqmxO7qB0BrYlUIVMs9%2F2ykeD9guOIZ6lwKsOHF9MK6zCc5YnL%2B03LrIO2v6ODTPlS4xtjo1ZcR1mu5Wpm4J%2BephWxrys9zX7JmRZ%2B%2Byxc8n3TIScZVSlX6qsawXhkb3tBr%2FRmK3k78ZI6tRxSaogUXNsPi%2BGV2Md%2BBbfnT0yAetTBQviAwkKcyo6EIcTuFdSzVVhzJmbCWcsmmX8kB3DBtdeGizJgWAgwjWfhr7y8xNBOKS4wOtkzX5x1Uirmp71kpOSKKaGgwjkvrBNFWPm5oiwQOA55psdycy6Uh8x0s3xPttG8HIWPiFaUkJT0oFDZvdI1Zd92yiB1L6ueyiAHZvk5XtWTYjiB3i7lOZ9%2FojrfDU%2BFm07sYphXueizSV9b84Qd3I3ai8nVkgU5Wmy8kamDEkEHdg08pmVqRO36tTXHmPjsJQuDyGeipNs5lDRpoMigPk%3D',
+  'iv' => 'am6vJm6rhMV%2FEleGxEcAKw%3D%3D',
+  'openid' => 'o-A305BsdQO0ZhI_M3BZbS6oUe1I',
+)
+[ info ] [ RUN ] app\applet\controller\Oauth->de_unionid[ /www/game/application/applet/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000418s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_applet_user` [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT `id`,`unionid` FROM `raisingchickens_applet_user` WHERE  `openid` = 'o-A305BsdQO0ZhI_M3BZbS6oUe1I' LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_applet_user`  SET `nickname`='A😈我是程吵吵',`avatar`='https://thirdwx.qlogo.cn/mmopen/vi_32/NQsb9mmEmEcbXDibkL9Jo0OAesVUPvVQCfiaXISvPFxC7BibbM29WUHzgaPNjS2zicRGMmmA8SRuZ82whO5OIOiaYfA/132',`unionid`='oOlUFw9CPC6SY24_7oN_Bve7lZ4E',`update_time`=1599657834  WHERE  `id` = 148 [ RunTime:0.016240s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:23:54+08:00 ] 36.60.134.40 POST game.yijiaegou.com/public/index.php/applet/order/check_user
+[运行时间：0.018377s] [吞吐率：54.42req/s] [内存消耗：1,761.45kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'applet',
+    1 => 'order',
+    2 => 'check_user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxb9518432372e2732/4/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/4G Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o-A305BsdQO0ZhI_M3BZbS6oUe1I',
+)
+[ info ] [ RUN ] app\applet\controller\Order->check_user[ /www/game/application/applet/controller/Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000432s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_applet_user` [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT `id`,`unionid` FROM `raisingchickens_applet_user` WHERE  `openid` = 'o-A305BsdQO0ZhI_M3BZbS6oUe1I' LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user` WHERE  `unionid` = 'oOlUFw9CPC6SY24_7oN_Bve7lZ4E' LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT `openid` FROM `raisingchickens_user` WHERE  `id` = 187 LIMIT 1 [ RunTime:0.000286s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:24:00+08:00 ] 36.60.134.40 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.024379s] [吞吐率：41.02req/s] [内存消耗：2,518.07kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/4G Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25Ct1cdyLx6pTu5AF6opnN1o',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000407s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25Ct1cdyLx6pTu5AF6opnN1o' LIMIT 1 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 187 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 187 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 187 [ RunTime:0.000300s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:24:11+08:00 ] 116.199.58.230 POST game.yijiaegou.com/public/index.php/api/Oauth/oauth_login
+[运行时间：0.240942s] [吞吐率：4.15req/s] [内存消耗：1,761.39kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Oauth',
+    2 => 'oauth_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'js_code' => '091mLLkl27EuA54jvKkl2ji1QW2mLLkC',
+)
+[ info ] [ RUN ] app\api\controller\Oauth->oauth_login[ /www/game/application/api/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000393s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001008s ]
+[ sql ] [ SQL ] SELECT `id`,`openid`,`avatar`,`nickname`,`mobile`,`unionid` FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25LacB5BMLo23uYG3a4ExrgM' LIMIT 1 [ RunTime:0.001290s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:24:11+08:00 ] 116.199.58.230 POST game.yijiaegou.com/public/index.php/api/Oauth/oauth_login
+[运行时间：0.248758s] [吞吐率：4.02req/s] [内存消耗：1,761.39kb] [文件加载：32]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Oauth',
+    2 => 'oauth_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'js_code' => '0119a900073SfK1XmD10081spC29a90Y',
+)
+[ info ] [ RUN ] app\api\controller\Oauth->oauth_login[ /www/game/application/api/controller/Oauth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000340s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT `id`,`openid`,`avatar`,`nickname`,`mobile`,`unionid` FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25LacB5BMLo23uYG3a4ExrgM' LIMIT 1 [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:24:11+08:00 ] 116.199.58.230 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.037028s] [吞吐率：27.01req/s] [内存消耗：2,518.07kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25LacB5BMLo23uYG3a4ExrgM',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000531s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001432s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25LacB5BMLo23uYG3a4ExrgM' LIMIT 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 173 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 173 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 173 [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:24:11+08:00 ] 116.199.58.230 POST game.yijiaegou.com/public/index.php/api/Userinfo/get_userinfo
+[运行时间：0.036479s] [吞吐率：27.41req/s] [内存消耗：2,518.07kb] [文件加载：40]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Userinfo',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25LacB5BMLo23uYG3a4ExrgM',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->get_userinfo[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000335s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25LacB5BMLo23uYG3a4ExrgM' LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_chicken` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT `id` FROM `raisingchickens_user_chicken` WHERE  `uid` = 173 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `isvip` = 2  AND `uid` = 173 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user_chicken` WHERE  `uid` = 173 [ RunTime:0.000628s ]
+---------------------------------------------------------------
+[ 2020-09-09T21:24:16+08:00 ] 116.199.58.230 POST game.yijiaegou.com/public/index.php/api/Integral/index
+[运行时间：0.021252s] [吞吐率：47.05req/s] [内存消耗：2,002.62kb] [文件加载：37]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Integral',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'game.yijiaegou.com',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/2/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2b) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/json',
+  'content-length' => '50',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25LacB5BMLo23uYG3a4ExrgM',
+  'page' => 1,
+)
+[ info ] [ RUN ] app\api\controller\Integral->index[ /www/game/application/api/controller/Integral.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_shop_goods` [ RunTime:0.002207s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`thumb`,`sale`,`price`,`pay_type`,`type` FROM `raisingchickens_shop_goods` ORDER BY `sort` ASC,`id` ASC LIMIT 0,10 [ RunTime:0.000287s ]

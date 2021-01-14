@@ -1,0 +1,38 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                {:access_button('AdminMenu/add_menu')}
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th>菜单名称</th>
+                        <th>路由</th>
+                        <th>菜单状态</th>
+                        <th>排序</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach $list as $item}
+                    <tr>
+                        <td>{$item.name}</td>
+                        <td>{$item.router}</td>
+                        <td>{$item.status == 1 ? '正常' : '禁用'}</td>
+                        <td>{$item.sort}</td>
+                        <td>
+                            {:access_button('AdminMenu/edit_menu', ['id'=>$item['id']], '编辑')}
+                            {:access_button('AdminMenu/del_menu', ['id'=>$item['id']], '删除', 'confirm')}
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                {$page}
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer"}

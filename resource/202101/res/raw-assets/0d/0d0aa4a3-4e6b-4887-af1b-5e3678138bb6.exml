@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.sydjUI" width="750" height="1624" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*">
+	<e:Image x="0" y="0" source="sydj_10_png"/>
+	<e:Image x="103" y="613" source="sydj_9_png"/>
+	<e:Image x="71" y="735" source="sydj_8_png"/>
+	<e:Image x="106" y="687" source="sydj_7_png"/>
+	<e:Image x="102" y="574" source="sydj_6_png"/>
+	<e:Image x="62" y="751" source="sydj_5_png"/>
+	<e:Image x="37" y="761" source="sydj_4_png"/>
+	<e:Image x="374" y="1085" source="sydj_3_png"/>
+	<e:Image x="343" y="842" source="sydj_2_png"/>
+	<e:Image x="0" y="0" source="sydj_1_png"/>
+</e:Skin>

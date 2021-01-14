@@ -1,0 +1,91 @@
+---------------------------------------------------------------
+[ 2020-09-22T23:59:57+08:00 ] 222.90.214.182 POST game.yijiaegou.com/public/index.php/api/Game/system_sign
+[运行时间：0.023231s] [吞吐率：43.05req/s] [内存消耗：2,037.98kb] [文件加载：38]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Game',
+    2 => 'system_sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/3/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2d) NetType/WIFI Language/zh_CN',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25JTgS4kLM-GesV0dg9RQm5Y',
+)
+[ info ] [ RUN ] app\api\controller\Game->system_sign[ /www/game/application/api/controller/Game.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000392s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25JTgS4kLM-GesV0dg9RQm5Y' LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_sign` [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT `s`.`class`,`r`.`name`,`s`.`rulename`,`s`.`ruleday` FROM `raisingchickens_sys_sign` `s` LEFT JOIN `raisingchickens_sys_reward` `r` ON `s`.`reward_id`=`r`.`id` WHERE  (  s.isenable = 1 ) [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-21%' [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-22%' [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-23%' [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-24%' [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-25%' [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-26%' [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-27%' [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[ 2020-09-22T23:59:58+08:00 ] 222.90.214.182 POST game.yijiaegou.com/public/index.php/api/userinfo/user_sign
+[运行时间：0.087989s] [吞吐率：11.37req/s] [内存消耗：2,700.92kb] [文件加载：44]
+[ info ] [ LANG ] /www/game/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'userinfo',
+    2 => 'user_sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wxdfcddef0ca6227aa/3/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.15(0x17000f2d) NetType/WIFI Language/zh_CN',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'connection' => 'keep-alive',
+  'host' => 'game.yijiaegou.com',
+  'content-type' => 'application/json',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o3tC25JTgS4kLM-GesV0dg9RQm5Y',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Userinfo->user_sign[ /www/game/application/api/controller/Userinfo.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000407s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25JTgS4kLM-GesV0dg9RQm5Y' LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ]  SELECT id  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-22%' [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_sign` [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT `sys`.*,`rew`.`name`,`rew`.`type`,`rew`.`number` FROM `raisingchickens_sys_sign` `sys` LEFT JOIN `raisingchickens_sys_reward` `rew` ON `sys`.`reward_id`=`rew`.`id` WHERE  `isenable` = 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_sign` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_sign` (`uid` , `issign` , `sign_id` , `create_time` , `remark`) VALUES (103 , 1 , 1 , '2020-09-22 23:59:58' , '+2积分') [ RunTime:0.030418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_sys_tanks` [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT `reward_id` FROM `raisingchickens_sys_tanks` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `raisingchickens_user_tanks` [ RunTime:0.000658s ]
+[ sql ] [ SQL ] INSERT INTO `raisingchickens_user_tanks` (`uid` , `t_id` , `details_id` , `prize_id` , `status` , `create_time`) VALUES (103 , 1 , 0 , 8 , 4 , '2020-09-22 23:59:58') [ RunTime:0.013252s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `integral`=`integral`+2  WHERE  `id` = 103 [ RunTime:0.006549s ]
+[ sql ] [ SQL ] UPDATE `raisingchickens_user`  SET `sign`=1,`last_sign_time`=1600790398  WHERE  `id` = 103 [ RunTime:0.004617s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-21%' [ RunTime:0.000408s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-22%' [ RunTime:0.000402s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-23%' [ RunTime:0.000380s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-24%' [ RunTime:0.000379s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-25%' [ RunTime:0.000383s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-26%' [ RunTime:0.000366s ]
+[ sql ] [ SQL ]  SELECT id,remark  FROM raisingchickens_user_sign  WHERE uid = 103 AND create_time LIKE '2020-09-27%' [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `raisingchickens_user` WHERE  `openid` = 'o3tC25JTgS4kLM-GesV0dg9RQm5Y' LIMIT 1 [ RunTime:0.000468s ]

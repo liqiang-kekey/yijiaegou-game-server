@@ -1,0 +1,123 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                <form class="layui-search layui-form" action="" method="get">
+                    <div class="layui-col-md3">
+                        <label>开始时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" if(!empty($time1)) value="{$time1}" {/if} id="time1" name="time1">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <label>结束时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" if(!empty($time2)) value="{$time2}" {/if} id="time2" name="time2">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3"></div>
+                    <div class="layui-col-md3"></div>
+                    <div class="layui-clear"></div>
+                    <div class="layui-col-md3">
+                        <label>微信昵称</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" name="nickname" value="{$where.nickname}" lay-verify="required" placeholder="微信昵称">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <label>小鸡等级</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" name="grade" value="{$where.grade}" lay-verify="required" placeholder="小鸡等级">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3 layui-search-submit">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-normal" type="button" onclick="search(this)">搜索</button>
+
+                        </div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <label style="color:red">总计{$count}条</label>
+                    </div>
+                    <div class="layui-clear"></div>
+                </form>
+                <table class="layui-table layui-form">
+                    <thead>
+                    <tr>
+                        <!-- <th style="width: 15px; text-align: center"><input type="checkbox" lay-filter="checkAll" lay-skin="primary"></th> -->
+                        <th>序号</th>
+                        <th>小鸡编号</th>
+                        <th>领养人编号</th>
+                        <th>领养人微信昵称</th>
+                        <th>领养人微信头像</th>
+                        <th>领养时间</th>
+                        <th>生长周期</th>
+                        <th>生长天数</th>
+                        <th>成长等级</th>
+                    </tr>
+                    </thead>
+                    {if condition="empty($list)"}
+                    <tr>
+                        <td colspan="9" align="center">暂无数据！</td>
+                    </tr>
+                    {/if}
+                    <tbody>
+                    {foreach $list as $item}
+                    <tr>
+                        <!-- <td><input type="checkbox" name="ids[]" value="{$item.id}" lay-skin="primary"></td> -->
+                        <td>{$item.id}</td>
+                        <td>{$item.number}</td>
+                        <td>{$item.uid}</td>
+                        <td>{$item.nickname}</td>
+                        <td><img src="{$item.avatar}"/></td>
+                        <td>{$item.create_time}</td>
+                        <td>{if $item.level == 1}孵化期{elseif $item.level == 2}成长期{elseif $item.level == 3}产蛋期{else}出栏期{/if}</td>
+                        <td><?php echo ceil(abs(strtotime($item['create_time']) - time()) /86400) - 1;?></td>
+                        <td>{$item.grade}</td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页按钮输出开始-->
+                <div class="page">
+                {$page}
+                </div>
+                <!--分页按钮输出结束-->
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}
+<script>
+    layui.use(['index', 'form', 'layedit','laydate'], function(){
+        var $ = layui.$
+            ,form = layui.form;
+        var laydate = layui.laydate;
+            laydate.render({
+                elem: '#time1' //指定元素
+
+            });
+
+            laydate.render({
+                elem: '#time2' //指定元素
+            })
+        form.render(null, 'component-form-group');
+        uploadInit('thumb', 'image', '图片尺寸 200 * 300');
+        // // 监听表单提交
+        // form.on('submit()', function(data){
+        //     delete data.field.file;
+        //     Post('', data.field, function(res) {
+        //         if (res.code == 1) {
+        //             alert_success(res.msg, function() {
+        //                 back_url();
+        //             })
+        //         } else {
+        //             alert_error(res.msg);
+        //         }
+        //     });
+        //     return false;
+        // });
+    });
+</script>

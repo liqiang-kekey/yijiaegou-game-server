@@ -1,0 +1,90 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                {:access_button('Goods/add_goods')}
+                <form class="layui-search layui-form" action="" method="get">
+
+                    <div class="layui-col-md3">
+                        <label>商品名称</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" name="name" value="{$where.name}">
+                        </div>
+                    </div>
+
+                    <div class="layui-col-md3">
+                        <label>商品类型</label>
+                        <div class="layui-input-inline"">
+                            <select name="type" lay-verify="required">
+                                <option value=""></option>
+                                <option value="1" {if condition = "$where.type ==1"}selected{/if}>优惠券</option>
+                                <option value="2" {if condition = "$where.type ==2"}selected{/if}>实物</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="layui-col-md3 layui-search-submit">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-normal" type="button" onclick="search(this)">搜索</button>
+                            <!--<button class="layui-btn layui-btn-danger" type="button" onclick="export_excel(this)">导出</button>-->
+                        </div>
+                    </div>
+                    <div class="layui-clear"></div>
+                </form>
+                <table class="layui-table layui-form">
+                    <thead>
+                    <tr>
+                        
+                        <th>ID</th>
+                        <th>商品排序</th>
+                        <th>商品名称</th>
+                        <th>商品图片</th>
+                        <th>商品类型</th>
+                        <th>支付类型</th>
+                        <th>售价</th>
+                        <th>库存</th>
+                        <th>是否上架</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    {if condition="empty($list)"}
+                    <tr>
+                        <td colspan="8" align="center">暂无数据！</td>
+                    </tr>
+                    {/if}
+                    <tbody>
+                    {foreach $list as $item}
+                    <tr>
+                        
+                        <td>{$item.id}</td>
+                        <td>{$item.sort}</td>
+                        <td>{$item.name}</td>
+                        <td><img src="{$item.thumb}"></td>
+                        <td>{if condition ="$item.type == 1"}优惠券{elseif condition ="$item.type == 2"}实物{else}未知类型{/if}</td>
+                        <td>{if condition ="$item.pay_type == 1"}积分{elseif condition ="$item.pay_type == 2"/}鸡蛋{else}未知方式{/if}</td>
+                        <td>{$item.price}</td>
+                        <td>{$item.stock}</td>
+                        <td>{if condition ="$item.shelves == 1"}上架{elseif condition ="$item.shelves == 2"/}下架{else}无状态{/if}</td>
+                        <td>
+                            <!--操作按钮开始-->
+                            {:access_button('Goods/edit_goods', ['id'=>$item['id']], '编辑')}
+                            {:access_button('Goods/del_goods', ['id'=>$item['id']], '删除', 'confirm')}
+                            <!--操作按钮结束-->
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+
+                <!--分页按钮输出开始-->
+                <div class="page">
+                {$page}
+                </div>
+                <!--分页按钮输出结束-->
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}

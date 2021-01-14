@@ -1,0 +1,23 @@
+<script src="{$resource_url}layuiadmin/layui/layui.js"></script>
+<script src="{$resource_url}admin/js/common.js"></script>
+<script>
+    layui.config({
+        base: '{$resource_url}/layuiadmin/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).use(['layer', 'form'], function() {
+        var $ = layui.$, form = layui.form;
+        form.render();
+        form.on('checkbox(checkAll)', function(data) {
+            if($(data.elem).prop('checked')) {
+                $('[name="ids[]"]').prop("checked", true);
+                form.render();
+            }else {
+                $('[name="ids[]"]').prop("checked", false);
+                form.render();
+            }
+        });
+    });
+</script>
+</body>
+</html>

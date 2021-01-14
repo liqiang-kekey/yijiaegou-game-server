@@ -1,0 +1,70 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                <!-- 添加 -->
+                {:access_button('Growthmanagement/add',[],'新增')}
+                <table class="layui-table layui-form">
+                    <thead>
+                    <tr>
+                    
+                        <th>ID</th>
+                        <th>名称</th>
+                        <th>类型</th>
+                        <th>限制天数</th>
+                        <th>喂养天数</th>
+                        <th>是否产蛋</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    {if condition="empty($list)"}
+                    <tr>
+                        <td colspan="7" align="center">暂无数据！</td>
+                    </tr>
+                    {/if}
+                    <tbody>
+                    {foreach $list as $item}
+                    <tr>
+                        <td>{$item.id}</td>
+                        <td>{$item.name}</td>
+                        <td>
+                            {if($item['class']==1)}
+                            孵化期
+                            {elseif($item['class']==2)}
+                            生长期
+                            {elseif($item['class']==3)}
+                            产蛋期
+                            {else}
+                            出栏期
+                            {/if}
+                        </td>
+                        <td>{$item.day}</td>
+                        <td>{$item.feed_count}</td>
+                        <td>{if($item.egg)}
+                            是({$item.egg})
+                            {else}
+                            否
+                            {/if}
+                        </td>
+                        <td>
+                            <!-- 编辑 -->
+                            {:access_button('Growthmanagement/edit',['id'=> $item.id],'编辑')}
+                            <!-- 删除 -->
+                            {:access_button('Growthmanagement/delete',['id'=> $item.id],'删除')}
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页按钮输出开始-->
+                <div class="page">
+                {$page}
+                </div>
+                <!--分页按钮输出结束-->
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}

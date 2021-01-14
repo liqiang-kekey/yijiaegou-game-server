@@ -1,0 +1,78 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                <form class="layui-search layui-form" action="{:url('index')}" method="get" enctype="multipart/form-data">
+                    <div class="layui-col-md3">
+                        <label>搜索字段<?php print_r($a);?></label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" {if !empty($a)} value ="{$a}"{/if} name="a" placeholder="微信昵称/编号">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3 layui-search-submit">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-normal" type="button" onclick="search(this)">搜索</button>
+                            <!-- <button class="layui-btn layui-btn-danger" type="button" onclick="export_excel(this)">导出</button> -->
+                        </div>
+                    </div>
+                    <div class="layui-clear"></div>
+                </form>
+                <table class="layui-table layui-form">
+                    <thead>
+                    <tr>
+                        <!-- <th style="width: 15px; text-align: center"><input type="checkbox" lay-filter="checkAll" lay-skin="primary"></th> -->
+                        <th>编号</th>
+                        <th>用户ID</th>
+                        <th>用户状态</th>
+                        <th>微信昵称</th>
+                        <th>微信头像</th>
+                        <th>用户名称</th>
+                        <th>用户头像</th>
+                        <th>积分数量</th>
+                        <th>鸡蛋数量</th>
+                        <th>小鸡数量</th>
+                        <th>上级用户</th>
+                        <th>下级数量</th>
+                        <!-- <th>操作</th> -->
+                    </tr>
+                    </thead>
+                    {if condition="empty($list)"}
+                    <tr>
+                        <td colspan="13" align="center">暂无数据！</td>
+                    </tr>
+                    {/if}
+                    <tbody>
+                    {foreach $list as $item}
+                    <tr>
+                        <!-- <td><input type="checkbox" name="ids[]" value="{$item.id}" lay-skin="primary"></td> -->
+                        <td>{$item.id}</td>
+                        <td>{$item.id}</td>
+                        <td>已授权</td>
+                        <td>{$item.nickname}</td>
+                        <td><img src="{$item.avatar}"/></td>
+                        <td>{$item.name}</td>
+                        <td>{if !empty($item.image)}<img src="{$item.image}"/>{else}未上传{/if}</td>
+                        <td>{$item.integral}</td>
+                        <td>{$item.egg}</td>
+                        <td>{$item.chicken}</td>
+                        <td>{$item.fnickname}</td>
+                        <td>{$item.childs}</td>
+                        <!-- <td>
+                            
+                        </td> -->
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页按钮输出开始-->
+                <div class="page">
+                {$page}
+                </div>
+                <!--分页按钮输出结束-->
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}

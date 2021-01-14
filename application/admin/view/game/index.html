@@ -1,0 +1,93 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                <form class="layui-search layui-form" action="{:url('index')}" method="POST" enctype="multipart/form-data">
+                    <div class="layui-col-md3">
+                        <label>搜索字段</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" name="a" {if !empty($name)} value ="{$name}" {/if} placeholder="模式名">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3 layui-search-submit">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-normal" type="submit" >搜索</button>
+                            <!-- <button class="layui-btn layui-btn-danger" type="button" onclick="export_excel(this)">导出</button> -->
+                        </div>
+                    </div>
+                    <div class="layui-clear"></div>
+                </form>
+                <table class="layui-table layui-form">
+                    <thead>
+                    <tr>
+                        <th style="width: 15px; text-align: center"><input type="checkbox" lay-filter="checkAll" lay-skin="primary"></th>
+                        <th>ID</th>
+                        <th>模式名</th>
+                        <th>公告</th>
+                        <th>警报线</th>
+                        <th>启用状态</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    {if condition="empty($list)"}
+                    <tr>
+                        <td colspan="6" align="center">暂无数据！</td>
+                    </tr>
+                    {/if}
+                    <tbody>
+                    {foreach $list as $item}
+                    <tr>
+                        <td><input type="checkbox" name="ids[]" value="{$item.id}" lay-skin="primary"></td>
+                        <td>{$item.id}</td>
+                        <td>{$item.name}</td>
+                        <td><p title={$item.notice}>{$item.notice|mb_substr=###,0,25}...</p></td>
+                        <th>{$item.alarm_line}</th>
+                        <td>{if $item.isenable ==1}启用 {else} <span style="color:red">禁用</span>{/if}</td>
+                        
+                        <td>
+                             <!--操作按钮开始-->
+                             {:access_button('Game/details', ['id'=>$item['id']], '编辑')}
+                             {:access_button('Game/delete', ['id'=>$item['id']], '删除', 'confirm')}
+                             <!--操作按钮结束-->
+                            
+                        </td>
+                </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页按钮输出开始-->
+                <div class="page">
+               
+                    {$page}
+              
+                </div>
+                <!--分页按钮输出结束-->
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}
+<script>
+    layui.use(['index', 'form', 'layedit'], function(){
+        var $ = layui.$
+            ,form = layui.form;
+        form.render(null, 'component-form-group');
+
+        // 监听表单提交
+        // form.on('submit()', function(data){
+        //     delete data.field.file;
+        //     Post("{:url('index')}", data.field, function(res) {
+        //         if (res.code == 1) {
+        //             alert_success(res.msg, function() {
+        //                 back_url();
+        //             })
+        //         } else {
+        //             alert_error(res.msg);
+        //         }
+        //     });
+        //     return false;
+        // });
+    });
+</script>

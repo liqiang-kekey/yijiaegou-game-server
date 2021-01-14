@@ -1,0 +1,119 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                <form class="layui-search layui-form" action="" method="get">
+                    <div class="layui-col-md3">
+                        <label>开始时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" if(!empty($time1)) value="{$time1}" {/if} id="time1" name="time1">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <label>结束时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" if(!empty($time2)) value="{$time2}" {/if} id="time2" name="time2">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3"></div>
+                        <div class="layui-col-md3"></div>
+                        <div class="layui-clear"></div>
+                        <div class="layui-col-md3">
+                            <label>用户名</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input" name="name" value="{$where.name}" lay-verify="required" placeholder="用户名">
+                            </div>
+                        </div>
+                    <div class="layui-col-md3">
+                            <label>微信昵称</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input" name="nickname" value="{$where.nickname}" lay-verify="required" placeholder="微信昵称">
+                            </div>
+                    </div>
+                    <div class="layui-col-md3 layui-search-submit">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-normal" type="button" onclick="search(this)">搜索</button>
+
+                        </div>
+                    </div>
+                    <div class="layui-clear"></div>
+                </form>
+                <table class="layui-table layui-form">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>用户编号</th>
+                        <th>用户姓名</th>
+                        <th>用户头像</th>
+                        <th>小鸡编号</th>
+                        <th>产蛋总量</th>
+                        <th>产蛋数量</th>
+                        <th>产蛋时间</th>
+                        <th>是否拣取</th>
+                    </tr>
+                    </thead>
+                    {if condition="empty($list)"}
+                    <tr>
+                        <td colspan="8" align="center">暂无数据！</td>
+                    </tr>
+                    {/if}
+                    <tbody>
+                    {foreach $list as $item}
+                    <tr>
+                        
+                        <td>{$item.id}</td>
+                        <td>{$item.uid}</td>
+                        <td>{$item.uname}</td>
+                        <td><img src="{$item.avatar}"></td>
+                        <td>{$item.number}</td>
+                        <td>{$item.outegg}</td>
+                        <td>1</td>
+                        <td>{$item.create_time}</td>
+                        <td>{if($item.ispickup == "1")}已拣取{else}未拣取{/if}</td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页按钮输出开始-->
+                <div class="page">
+                {$page}
+                </div>
+                <!--分页按钮输出结束-->
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}
+<script>
+    layui.use(['index', 'form', 'layedit','laydate'], function(){
+        var $ = layui.$
+            ,form = layui.form;
+        var laydate = layui.laydate;
+            laydate.render({
+                elem: '#time1' //指定元素
+
+            });
+
+            laydate.render({
+                elem: '#time2' //指定元素
+            })
+        form.render(null, 'component-form-group');
+        uploadInit('thumb', 'image', '图片尺寸 200 * 300');
+        // // 监听表单提交
+        // form.on('submit()', function(data){
+        //     delete data.field.file;
+        //     Post('', data.field, function(res) {
+        //         if (res.code == 1) {
+        //             alert_success(res.msg, function() {
+        //                 back_url();
+        //             })
+        //         } else {
+        //             alert_error(res.msg);
+        //         }
+        //     });
+        //     return false;
+        // });
+    });
+</script>

@@ -1,0 +1,44 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title} <a href="javascript: back_url();" class="layui-btn layui-btn-primary layui-layout-right">返回上级</a></div>
+            
+            <div class="layui-card-body">
+                <form class="layui-form padsome" action="">
+                    <div id="test1" class="demo-tree-more"></div>
+                  
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}
+<script>
+    layui.use(['index', 'form', 'layedit','tree'], function(){
+        var $ = layui.$
+            ,form = layui.form
+            ,tree = layui.tree;
+       // console.log({$list});
+        var inst1 = tree.render({
+        elem: '#test1'  //绑定元素
+        ,data: {$list}
+        });
+        form.render(null, 'component-form-group');
+
+        // 监听表单提交
+        form.on('submit()', function(data){
+            delete data.field.file;
+            Post('', data.field, function(res) {
+                if (res.code == 1) {
+                    alert_success(res.msg, function() {
+                        back_url();
+                    })
+                } else {
+                    alert_error(res.msg);
+                }
+            });
+            return false;
+        });
+    });
+</script>

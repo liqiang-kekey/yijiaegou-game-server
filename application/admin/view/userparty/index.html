@@ -1,0 +1,89 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                
+                <form class="layui-search layui-form" action="" method="get">
+                    <div class="layui-col-md3">
+                        <label>搜索字段</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" value ="{$where.a}" name="a" placeholder="输入姓名、昵称"/>
+                        </div>
+                    </div>
+                    <div class="layui-col-md1 layui-search-submit">
+                        <div class="layui-input-inline" style="width:200px">
+                            <button class="layui-btn layui-btn-normal"  style ="" type="button" onclick="search(this)">
+                                搜索
+                            </button>
+                            <button class="layui-btn layui-btn-danger" type="button" id = "execel_out">导出</button>
+                        </div>
+                    </div>
+                   
+                    <div class="layui-clear"></div>
+                </form>
+                
+                <table class="layui-table layui-form">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>下级小游戏姓名</th>
+                            <th>下级小游戏昵称</th>
+                            <th>下级小游戏头像</th>
+                            <th>上级易家商城用户编号</th>
+                            <th>上级易家商城姓名</th>
+                            <th>上级易家商城头像</th>
+                            <th>订单号</th>
+                            <th>分成比例</th>
+                            <th>支付金额</th>
+                            <th>分成金额</th>
+                            <th>创建时间</th>
+                        </tr>
+                    </thead>
+                    {if condition="empty($list)"}
+                    <tr>
+                        <td colspan="11" align="center">暂无数据！</td>
+                    </tr>
+                    {/if}
+                    <tbody>
+                        {foreach $list as $item}
+                        <tr>
+                            <td>{$item.id}</td>
+                            <td>{$item.name}</td>
+                            <td>{$item.nickname}</td>
+                            <td><img src="{$item.avatar}" /></td>
+                            <td>{$item.member_id}</td>
+                            <td>{$item.username}</td>
+                            <td><img src="{$item.favatar}" /></td>
+                            <td>{$item.order_sn}</td>
+                            <td><?php echo intval($item['proportion']) ;?>%</td>
+                            <td>{$item.pay_money}¥</td>
+                            <td>{$item.settlement_money}¥</td>
+                            <td>{$item.create_time}</td>
+                        </tr>
+                        {/foreach}
+                    </tbody>
+                </table>
+                <!--分页按钮输出开始-->
+                
+                <div class="page">{$page}</div>
+              
+                <!--分页按钮输出结束-->
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}
+<script>
+    layui.use(['index', 'upload'], function(){
+       var $ = layui.$
+           ,upload = layui.upload;
+       
+       $('#execel_out').on('click',()=>{
+           name = $('[name = a]').val();
+           
+           window.location.href = "{:url('admin/Userparty/excel_out')}"+'?a='+name;
+       })
+   });
+</script>

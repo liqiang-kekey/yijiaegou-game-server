@@ -1,0 +1,143 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                <form class="layui-search layui-form" action="" method="get">
+                    <div class="layui-col-md3">
+                        <label>用户昵称</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" name="nickname" value="{$where.nickname}">
+                        </div>
+                    </div>
+                    <!-- <div class="layui-col-md3">
+                        <label>用户姓名</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" name="name" value="{$where.name}">
+                        </div>
+                    </div> -->
+                    <div class="layui-col-md3">
+                        <label>订单状态</label>
+                        <div class="layui-input-inline">
+                            <select name="status">
+                                <option >请选择</option>
+                                <option {if $where.status =="0"} selected="selected" {/if} value ="0">未支付</option>
+                                <option {if $where.status =="1"} selected="selected" {/if} value ="1">已支付</option>
+                            </select>
+                            
+                        </div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <label>支付时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" id="time1" name="time1" value="{$where.time1}">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <label>订单编号</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" name="order_sn" value="{$where.order_sn}">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3 layui-search-submit">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-normal" type="button" onclick="search(this)">搜索</button>
+                            <button class="layui-btn layui-btn-danger" type="button" id = "execel_out">导出</button>
+                        </div>
+                    </div>
+                    <div class="layui-clear"></div>
+                </form>
+                <table class="layui-table layui-form">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>用户昵称</th>
+                        <!-- <th>openid</th> -->
+                        <th>订单编号</th>
+                        <th>购买数量</th>
+                        <th>支付状态</th>
+                        <th>订单金额</th>
+                        <th>支付时间</th>
+                        <th>姓名</th>
+                        <th>手机</th>
+                        <th>购买地址</th>
+                        <!--<th>操作</th>-->
+                    </tr>
+                    </thead>
+                    {if condition="empty($list)"}
+                    <tr>
+                        <td colspan="11" align="center">暂无数据！</td>
+                    </tr>
+                    {/if}
+                    <tbody>
+                    {foreach $list as $item}
+                    <tr>
+                        <td>{$item.id}</td>
+                        <td>{$item.nickname}</td>
+                        <!-- <td>{$item.openid}</td> -->
+                        <td>{$item.order_sn}</td>
+                        <td>{$item.number}</td>
+                        <td>{$item.status}</td>
+                        <td>{$item.money}</td>
+                        <td>{$item.pay_time|date='Y-m-d H:i:s',###}</td>
+                        <td>{$item.name}</td>
+                        <td>{$item.mobile}</td>
+                        <td>{$item.province}{$item.city}{$item.area}{$item.address}</td>
+
+                        <!--<td>-->
+                            <!--&lt;!&ndash;操作按钮开始&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;操作按钮结束&ndash;&gt;-->
+                        <!--</td>-->
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页按钮输出开始-->
+                <div class="page">
+                {$page}
+                </div>
+                <!--分页按钮输出结束-->
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}
+<script>
+    layui.use(['index', 'form', 'layedit','laydate'], function(){
+        var $ = layui.$
+            ,form = layui.form;
+        var laydate = layui.laydate;
+            laydate.render({
+                elem: '#time1' //指定元素
+
+            });
+             
+             $('#execel_out').on('click',()=>{
+                
+                    nickname =$('[name=nickname]').val(),
+                    status=$('[name=status]').val(),
+                    time1=$('[name=time1]').val(),
+                    order_sn=$('[name=order_sn]').val(),
+                window.location.href = "{:url('admin/BcOrder/excel_out')}"+"?nickname="+nickname+'&status='+status+'&time1='+time1+'&order_sn='+order_sn;
+            })
+
+        form.render(null, 'component-form-group');
+        uploadInit('thumb', 'image', '图片尺寸 200 * 300');
+        // // 监听表单提交
+        // form.on('submit()', function(data){
+        //     delete data.field.file;
+        //     Post('', data.field, function(res) {
+        //         if (res.code == 1) {
+        //             alert_success(res.msg, function() {
+        //                 back_url();
+        //             })
+        //         } else {
+        //             alert_error(res.msg);
+        //         }
+        //     });
+        //     return false;
+        // });
+    });
+</script>

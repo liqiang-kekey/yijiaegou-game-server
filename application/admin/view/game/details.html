@@ -1,0 +1,97 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title} <a href="javascript: back_url();" class="layui-btn layui-btn-primary layui-layout-right">返回上级</a></div>
+            <div class="layui-card-body">
+                <form class="layui-form padsome" action="">
+                    <div><input type="hidden" name ='id' {if !empty($item)} value="{$item.id}" {/if}></div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">游戏模式</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" {if !empty($item)} value="{$item.name}" {/if} lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">启用状态</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="isenable" value="1" title="启用" {if condition="$item.isenable == 1"}checked{/if}>
+                            <input type="radio" name="isenable" value="2" title="禁用" {if condition="$item.isenable == 2"}checked{/if}>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">免费、收费开启</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="is_vip" value="1" title="启用" {if condition="$item.is_vip == 1"}checked{/if}>
+                            <input type="radio" name="is_vip" value="0" title="禁用" {if condition="$item.is_vip == 0"}checked{/if}>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">鸡蛋警报</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="alarm_line" {if !empty($item)} value="{$item.alarm_line}" {/if} lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">公告</label>
+                        <div class="layui-input-block">
+                            <textarea class="layui-textarea" name="notice"> {if !empty($item)} {$item.notice}{/if}</textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">公告开始时间</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input" if(!empty($item)) value="{$item.logostarttime}" {/if} id="logostarttime" name="logostarttime">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">公告结束时间</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input" if(!empty($item)) value="{$item.logoendtime}" {/if} id="logoendtime" name="logoendtime">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <div class="layui-footer" style="left: 0;">
+                                <button class="layui-btn" lay-submit="">提交</button>
+                                <button class="layui-btn layui-btn-primary" type="button" onclick="back_url()">返回</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}
+<script>
+    layui.use(['index', 'form', 'layedit','laydate'], function(){
+        var $ = layui.$
+            ,form = layui.form;
+        form.render(null, 'component-form-group');
+        var laydate = layui.laydate;
+            laydate.render({
+                elem: '#logoendtime' //指定元素
+                ,type: 'datetime'
+            });
+
+            laydate.render({
+                elem: '#logostarttime' //指定元素
+                ,type: 'datetime'
+            })
+        // 监听表单提交
+        form.on('submit()', function(data){
+            delete data.field.file;
+            Post("{:url('Game/edit')}", data.field, function(res) {
+                if (res.code == 1) {
+                    alert_success(res.msg, function() {
+                        back_url();
+                    })
+                } else {
+                    alert_error(res.msg);
+                }
+            });
+            return false;
+        });
+    });
+</script>

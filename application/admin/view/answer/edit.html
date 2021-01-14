@@ -1,0 +1,118 @@
+{include file="public/header"}
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title} <a href="javascript: back_url();" class="layui-btn layui-btn-primary layui-layout-right">返回上级</a></div>
+            <div class="layui-card-body">
+                <form class="layui-form padsome" action="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">题目类型</label>
+                        <div class="layui-input-block">
+                            <select name ="class_id">
+                                <option>请选择题目类型</option>
+                                {foreach ($class_list as $vo)}
+                                    <option value ="{$vo.id}" {if ($item['class_id'] == $vo.id)} selected{/if}>{$vo.name}</option>                                
+                                {/foreach}
+                            </select>
+                        </div>
+                    </div>
+                    <input type="hidden" id ="id" name ="id" value = "{$item.id}">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">题目标题</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" value="{$item.title}"  placeholder="(请输入题目标题)" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选项(A)</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="one" value="{$item.one}"  placeholder="选项(A)内容" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选项(B)</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="two" value="{$item.two}"  placeholder="选项(B)内容" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选项(C)</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="three" value="{$item.three}"  placeholder="选项(C)内容" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选项(D)</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="five" value="{$item.five}"  placeholder="选项(D)内容" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选项(E)</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="six" value="{$item.six}"  placeholder="选项(E)内容" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选项(F)</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="seven" value="{$item.seven}"  placeholder="选项(F)内容" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">正确答案</label>
+                        <div class="layui-input-block">
+                            <input type="checkbox" name="really[]" value="A" title="A" <?php if( strpos($item['really'] ,'A') !== false){ ?> checked <?php } ?> >  
+                            <input type="checkbox" name="really[]" value="B" title="B" <?php if( strpos($item['really'] ,'B') !== false){ ?> checked <?php } ?>  >
+                            <input type="checkbox" name="really[]" value="C" title="C" <?php if( strpos($item['really'] ,'C') !== false){ ?> checked <?php } ?> >
+                            <input type="checkbox" name="really[]" value="D" title="D" <?php if( strpos($item['really'] ,'D') !== false){ ?> checked <?php } ?> >
+                            <input type="checkbox" name="really[]" value="E" title="E" <?php if( strpos($item['really'] ,'E') !== false){ ?> checked <?php } ?> >
+                            <input type="checkbox" name="really[]" value="F" title="F" <?php if( strpos($item['really'] ,'F') !== false){ ?> checked <?php } ?> >
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">奖励积分</label>
+                        <div class="layui-input-block">
+                            <select name ="integral">
+                                {foreach $sys_rw as $k => $v}
+                                    <option value ="{$v.number}" {if $item.integral == $v.number } selected {/if}>{$v.name}</option>
+                                {/foreach}}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <div class="layui-footer" style="left: 0;">
+                                <button class="layui-btn" lay-submit="">提交</button>
+                                <button class="layui-btn layui-btn-primary" type="button" onclick="back_url()">返回</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="public/footer" /}
+<script>
+    layui.use(['index', 'form', 'layedit'], function(){
+        var $ = layui.$
+            ,form = layui.form;
+        form.render(null, 'component-form-group');
+
+        // 监听表单提交
+        form.on('submit()', function(data){
+            delete data.field.file;
+            Post("{:url('admin/Answer/edit')}", data.field, function(res) {
+                if (res.code == 1) {
+                    alert_success(res.msg, function() {
+                        back_url();
+                    })
+                } else {
+                    alert_error(res.msg);
+                }
+            });
+            return false;
+        });
+    });
+</script>

@@ -1,0 +1,194 @@
+{include file="public/header"}
+<style>
+    #tables {
+        display: block;
+        overflow-y: auto;
+    }
+   
+</style>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-card-header">{$page_title}</div>
+            <div class="layui-card-body">
+                <form class="layui-search layui-form" action="" method="get">
+                    <div class="layui-col-md3">
+                        <label>姓名</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" if(!empty($where)) value="{$where.name}" {/if} id="name" name="name" placeholder="请输入姓名">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <label>微信昵称</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" if(!empty($where)) value="{$where.nickname}" {/if} id="nickname" name="nickname" placeholder="请输入微信昵称">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3"></div>
+                    <div class="layui-col-md3"></div>
+                    <div class="layui-clear"></div>
+                    <div class="layui-col-md3">
+                        <label>购买时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" id="bytime" value="{$where.bytime}" name ="bytime" lay-verify="required" placeholder="请选择时间">
+                        </div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <label>发货状态</label>
+                        <div class="layui-input-inline">
+                            <select name="level">
+                                <option value ="0">请选择</option>
+                                <option value ="1">待发货</option>
+                                <option value ="2">已发货</option>
+                                <option value ="3">已收货</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="layui-col-md3 layui-search-submit">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-normal" type="button" onclick="search(this)">搜索</button>
+
+                        </div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <label style="color:red">总计{$count}条</label>
+                    </div>
+                    <div class="layui-clear"></div>
+                </form>
+                <table class="layui-table layui-form" id="tables">
+                    <thead>
+                        <tr class="myth">
+                            <th>ID</th>
+                            <th>姓名</th>
+                            <th>昵称</th>
+                            <th>头像</th>
+                            <!-- <th>小鸡编号</th> -->
+                            <th>自购/赠送</th>
+                            <!-- 
+                            {if $d.give_id != 0 && $d.is_accept == 1}
+                            <th>赠送人</th>
+                            <th>接受人</th>
+                            {/if} -->
+                            <th>购买订单编号</th>
+                            <!-- <th>证书编号</th>-->                            
+                            <!--<th>是否VIP</th>
+                            <th>已产蛋量</th>
+                             <th>生长等级</th> 
+                            <th>自由等级</th>-->
+                            <th>支付用户ID</th>
+                            <th>支付用户姓名</th>
+                            <th>支付时间</th>
+                            <th>支付金额</th>
+                            <!--<th>是否出栏</th>-->
+                            <th>收件人</th>
+                            <th>收件人电话</th>
+                            <th>收件人省份</th>
+                            <th>收件人城市</th>
+                            <th>收件人区域</th>
+                            <th>收件人详细地址</th>
+                            <th>发货订单编号</th>
+                            <th>订单状态</th>
+                            <!-- <th>邮寄费用</th>
+                            <th>邮寄时间</th> -->
+                            <th>操 作</th>
+                        </tr>
+                    </thead>
+                    {if condition="empty($list)"}
+                    <tr>
+                        <td colspan="22" align="center">暂无数据！</td>
+                    </tr>
+                    {/if}
+                    <tbody>
+                        {foreach $list as $d}
+                        <tr>
+
+                            <td>{$d.chickenduserid}</td>
+                            <td>{$d.name}</td>
+                            <td>{$d.nickname}</td>
+                            <td><img src="{$d.avatar}" /></td>
+                            </td>
+                            <!-- <td>{$d.number}</td> -->
+                            <td>
+                            {if $d.source == 2 && $d.game_user_id != ''} 自购
+                            {elseif $d.source == 3 && $d.game_user_id != ''}赠送
+                            {else}免费{/if}
+                            </td>
+                            <!-- 
+                            {if $d.give_id != 0 && $d.is_accept == 1}
+                            <td>{$d.give_id}</td>
+                            <td>{$d.acceptuserid}</td>
+                            {/if} -->
+                            <td>{$d.order_sn}</td>
+                            <!-- <td>{$d.identifier}</td> -->                            
+                            <!--<td>{if $d.isvip == 1} 是{else}否{/if}</td>
+                            <td>{$d.outegg}</td>
+                            <td>{$d.level}</td> 
+                            <td>{$d.grade}</td>-->
+                            <td>{$d.game_user_id}</td>
+                            <td>{$d.payuname}</td>
+                            <td>{$d.create_time}</td>
+                            <td>{$d.payMoney}</td>
+                            
+                            <!--<td>{if $d.isout == 1}已出栏{else}未出栏{/if}</td>-->
+                            <td>{$d.emailname}</td>
+                            <td>{$d.emailmobile}</td>
+                            <td>{$d.province}</td>
+                            <td>{$d.city}</td>
+                            <td>{$d.area}</td>
+                            <td>{$d.address}</td>
+                            <td>{$d.shipping_order}</td>
+                            <td>{if $d.shipping_status == 0}未发货{elseif $d.shipping_status == 1 } <p style="color: red;">已发货</p>{else}已收货{/if}</td>
+                            <!-- <td>{$d.pay_money}</td>
+                            <td>{$d.shipping_time}</td> -->
+                            <td>
+                                {if $d.shipping_status == 0}
+                                    {:access_button('Outcart/deliver', ['id'=>$d['id']], '发货')}
+                                {elseif $d.shipping_status == 1}
+                                    {:access_button('Outcart/harvest', ['id'=>$d['id']], '收货','confirm')}
+                                {else}
+                                    已收货
+                                {/if}
+                            </td>
+                        </tr>
+                        {/foreach}
+                    </tbody>
+                </table>
+                <!--分页按钮输出开始-->
+                <div class="page">
+                    {$page}
+                </div>
+                <!--分页按钮输出结束-->
+            </div>
+        </div>
+    </div>
+</div>
+
+{include file="public/footer" /}
+<script>
+    layui.use(['index', 'form', 'layedit','laydate'], function(){
+        var $ = layui.$
+            ,form = layui.form;
+        var laydate = layui.laydate;
+            laydate.render({
+                elem: '#bytime' //指定元素
+
+            });
+        form.render(null, 'component-form-group');
+        uploadInit('thumb', 'image', '图片尺寸 200 * 300');
+        // // 监听表单提交
+        // form.on('submit()', function(data){
+        //     delete data.field.file;
+        //     Post('', data.field, function(res) {
+        //         if (res.code == 1) {
+        //             alert_success(res.msg, function() {
+        //                 back_url();
+        //             })
+        //         } else {
+        //             alert_error(res.msg);
+        //         }
+        //     });
+        //     return false;
+        // });
+    });
+</script>
